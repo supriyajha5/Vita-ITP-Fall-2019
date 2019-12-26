@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+{% block content %}
+<html>
+<head>
+	<div class="content-section">
+		 <legend class= "border-bottom mb-4"> Kid's Info </legend> 
+          <h6 class="text-secondary">Name of the Kid: {{ info.kids_name }}</h6> 
+          <h6 class="text-secondary">Date of Birth: {{ info.kids_dob }}</h6> 
+          <h6 class="text-secondary">Guardian's Name: {{ info.guardian }}</h6> 
+          <h6 class="text-secondary">Weight: {{ info.kids_weight }}</h6> 
+          <h6 class="text-secondary">Height: {{ info.kids_height }}</h6> 
+          <h6 class="text-secondary">Safe Area Location: {{ info.address }}</h6> 
+    </div>
+
+    	<div class="content-section">
+		 <legend class= "border-bottom mb-4"> Anxiety Data </legend> 
+
+		 <table style="width:100%">
+			  <tr>
+			    <th>Time</th>
+			    <th>Heartbeat</th>
+			    <th>Bloodpressure</th>
+			    <th>Level</th>
+			    <th>Location</th>
+			  </tr>
+		 {% for d in data %}
+		 	<tr>
+		  		<td> {{ d.time }} </td> 
+			  	<td> {{ d.heartbeat }} </td> 
+			  	<td> {{ d.bp }} </td> 
+			  	<td> {{ d.level }} </td> 
+			  	<td> {{ d.location }} </td>
+			</tr>
+		   {% endfor %}
+		</table>
+	</div>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+
+      function drawChart() {
+
+        var data1 = new google.visualization.DataTable();
+        data1.addColumn('number', 'Time');
+        data1.addColumn('number', 'Heartrate');
+        data1.addColumn('number', 'BP');
+
+        {% for d in data %}        
+        data1.addRows([
+          [{{ d.time.hour }},  {{ d.heartbeat }}, {{ d.bp }}]
+         ]);
+    	{% endfor %}
+
+        var options = {
+          title: 'Heart Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data1, options);
+      }
+
+	</script>
+	
+	<script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+    var lev1 = 0;
+    var lev2 = 0;
+    var lev3 = 0;
+      {% for d in data %}  
+      	{% if d.level == '1' %}
+      		lev1 = lev1+1
+      	{% elif d.level == '2' %}
+      		lev2 = lev2+1
+      	{% elif d.level == '3' %}
+      		lev3 = lev3+1
+      	{% endif %}
+      {% endfor %}
+
+      var data2 = new google.visualization.arrayToDataTable([
+      	['Levels', 'Counts', { role: 'style' }],
+      	['Level 1', lev1, '#b87333'],
+      	['Level 2', lev2, 'silver'],
+      	['Level 3', lev3, 'gold']
+      	]);
+
+      var view = new google.visualization.DataView(data2);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        	title: "Anxiety Level Count",
+        	width: 750,
+        	height: 400,
+        	bar: {groupWidth: "50%"},
+        	legend: { position: "none" },
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+        chart.draw(view, options);
+      }
+    </script>
+</div>
+  </head>
+
+  <body>
+    <div id="curve_chart" style="width: 750px; height: 400px"></div>
+    <div id="barchart_values" style="width: 1500px; height: 400px;"></div>
+  </body>
+</html>
+{% endblock content %}

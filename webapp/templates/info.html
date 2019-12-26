@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+
+	<div class="content-section">
+      <div class="media">
+        <img class="rounded-circle account-img" src="{{ image_file }}">
+            <div class="media-body">
+          		<p class="account-heading">{{ current_user.username }}</p>
+          		<p class="text-secondary">{{ current_user.email }}</p>   
+          	</div> 
+      </div>
+      	<legend class= "border-bottom mb-4"> Kids Basic Info </legend> 
+          <h6 class="text-secondary">Name of the Kid: {{ info.kids_name }}</h6> 
+          <h6 class="text-secondary">Date of Birth: {{ info.kids_dob }}</h6> 
+          <h6 class="text-secondary">Guardian's Name: {{ info.guardian }}</h6> 
+          <h6 class="text-secondary">Weight: {{ info.kids_weight }}</h6> 
+          <h6 class="text-secondary">Height: {{ info.kids_height }}</h6> 
+          <h6 class="text-secondary">Safe Area Location: {{ info.address }}</h6> 
+
+    </div>
+{% endblock content %}
+
