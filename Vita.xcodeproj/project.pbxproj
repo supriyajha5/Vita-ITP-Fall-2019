@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F719EAC023A40E210029FE3E /* site.db in Resources */ = {isa = PBXBuildFile; fileRef = F719EABF23A40E210029FE3E /* site.db */; };
+		F76232312391A1EF00694032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232302391A1EF00694032 /* AppDelegate.swift */; };
+		F76232332391A1EF00694032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232322391A1EF00694032 /* SceneDelegate.swift */; };
+		F76232352391A1EF00694032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232342391A1EF00694032 /* ViewController.swift */; };
+		F76232382391A1EF00694032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76232362391A1EF00694032 /* Main.storyboard */; };
+		F762323A2391A1F400694032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76232392391A1F400694032 /* Assets.xcassets */; };
+		F762323D2391A1F400694032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F762323B2391A1F400694032 /* LaunchScreen.storyboard */; };
+		F76232422391A1F400694032 /* Vita WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F76232412391A1F400694032 /* Vita WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F76232482391A1F400694032 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76232462391A1F400694032 /* Interface.storyboard */; };
+		F762324A2391A1F500694032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76232492391A1F500694032 /* Assets.xcassets */; };
+		F76232512391A1F600694032 /* Vita WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F76232502391A1F600694032 /* Vita WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F76232562391A1F600694032 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232552391A1F600694032 /* InterfaceController.swift */; };
+		F76232582391A1F600694032 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232572391A1F600694032 /* ExtensionDelegate.swift */; };
+		F762325A2391A1F600694032 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232592391A1F600694032 /* NotificationController.swift */; };
+		F762325C2391A1F600694032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F762325B2391A1F600694032 /* Assets.xcassets */; };
+		F76232712391BB1900694032 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232702391BB1900694032 /* WelcomeController.swift */; };
+		F76232732391EF0E00694032 /* EmojiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232722391EF0E00694032 /* EmojiController.swift */; };
+		F76232752391FA4400694032 /* movieclip.mov in Resources */ = {isa = PBXBuildFile; fileRef = F76232742391FA4400694032 /* movieclip.mov */; };
+		F7623279239236EA00694032 /* got.mov in Resources */ = {isa = PBXBuildFile; fileRef = F7623278239236EA00694032 /* got.mov */; };
+		F762327B23924AEB00694032 /* gotbloop.mov in Resources */ = {isa = PBXBuildFile; fileRef = F762327A23924AEB00694032 /* gotbloop.mov */; };
+		F762327D2392500200694032 /* ysheldon.mov in Resources */ = {isa = PBXBuildFile; fileRef = F762327C2392500200694032 /* ysheldon.mov */; };
+		F762327F2392533700694032 /* TicTacToeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762327E2392533700694032 /* TicTacToeController.swift */; };
+		F76232832392622B00694032 /* OpticIllusionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232822392622B00694032 /* OpticIllusionController.swift */; };
+		F76232852393A0DF00694032 /* musicclip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F76232842393A0DF00694032 /* musicclip.mp3 */; };
+		F76232872393A2A600694032 /* GoHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76232862393A2A600694032 /* GoHomeController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F76232432391A1F400694032 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76232252391A1EF00694032 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76232402391A1F400694032;
+			remoteInfo = "Vita WatchKit App";
+		};
+		F76232522391A1F600694032 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76232252391A1EF00694032 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F762324F2391A1F600694032;
+			remoteInfo = "Vita WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F76232642391A1F600694032 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F76232512391A1F600694032 /* Vita WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76232682391A1F600694032 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F76232422391A1F400694032 /* Vita WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F719EABF23A40E210029FE3E /* site.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = site.db; path = ../../../../Downloads/site.db; sourceTree = "<group>"; };
+		F719EAC123A767680029FE3E /* site.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = site.db; path = ../../../../Downloads/site.db; sourceTree = "<group>"; };
+		F762322D2391A1EF00694032 /* Vita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vita.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76232302391A1EF00694032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F76232322391A1EF00694032 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F76232342391A1EF00694032 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F76232372391A1EF00694032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F76232392391A1F400694032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F762323C2391A1F400694032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F762323E2391A1F400694032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76232412391A1F400694032 /* Vita WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vita WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76232472391A1F400694032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F76232492391A1F500694032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F762324B2391A1F500694032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76232502391A1F600694032 /* Vita WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vita WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76232552391A1F600694032 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F76232572391A1F600694032 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F76232592391A1F600694032 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F762325B2391A1F600694032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F762325D2391A1F600694032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F762325E2391A1F600694032 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F76232702391BB1900694032 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
+		F76232722391EF0E00694032 /* EmojiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiController.swift; sourceTree = "<group>"; };
+		F76232742391FA4400694032 /* movieclip.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = movieclip.mov; path = ../../../../Downloads/video_files/movieclip.mov; sourceTree = "<group>"; };
+		F7623277239234FA00694032 /* got.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = got.mp4; path = ../../../../Downloads/got.mp4; sourceTree = "<group>"; };
+		F7623278239236EA00694032 /* got.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = got.mov; path = ../../../../Downloads/got.mov; sourceTree = "<group>"; };
+		F762327A23924AEB00694032 /* gotbloop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = gotbloop.mov; path = ../../../../Downloads/gotbloop.mov; sourceTree = "<group>"; };
+		F762327C2392500200694032 /* ysheldon.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = ysheldon.mov; path = ../../../../Downloads/ysheldon.mov; sourceTree = "<group>"; };
+		F762327E2392533700694032 /* TicTacToeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeController.swift; sourceTree = "<group>"; };
+		F76232822392622B00694032 /* OpticIllusionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticIllusionController.swift; sourceTree = "<group>"; };
+		F76232842393A0DF00694032 /* musicclip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = musicclip.mp3; path = ../../../../Downloads/musicclip.mp3; sourceTree = "<group>"; };
+		F76232862393A2A600694032 /* GoHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoHomeController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F762322A2391A1EF00694032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F762324D2391A1F600694032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F76232242391A1EF00694032 = {
+			isa = PBXGroup;
+			children = (
+				F762322F2391A1EF00694032 /* Vita */,
+				F76232452391A1F400694032 /* Vita WatchKit App */,
+				F76232542391A1F600694032 /* Vita WatchKit Extension */,
+				F762322E2391A1EF00694032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F762322E2391A1EF00694032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F762322D2391A1EF00694032 /* Vita.app */,
+				F76232412391A1F400694032 /* Vita WatchKit App.app */,
+				F76232502391A1F600694032 /* Vita WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F762322F2391A1EF00694032 /* Vita */ = {
+			isa = PBXGroup;
+			children = (
+				F76232302391A1EF00694032 /* AppDelegate.swift */,
+				F76232322391A1EF00694032 /* SceneDelegate.swift */,
+				F76232342391A1EF00694032 /* ViewController.swift */,
+				F76232362391A1EF00694032 /* Main.storyboard */,
+				F76232392391A1F400694032 /* Assets.xcassets */,
+				F762323B2391A1F400694032 /* LaunchScreen.storyboard */,
+				F762323E2391A1F400694032 /* Info.plist */,
+			);
+			path = Vita;
+			sourceTree = "<group>";
+		};
+		F76232452391A1F400694032 /* Vita WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F76232462391A1F400694032 /* Interface.storyboard */,
+				F76232492391A1F500694032 /* Assets.xcassets */,
+				F762324B2391A1F500694032 /* Info.plist */,
+			);
+			path = "Vita WatchKit App";
+			sourceTree = "<group>";
+		};
+		F76232542391A1F600694032 /* Vita WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F719EABF23A40E210029FE3E /* site.db */,
+				F719EAC123A767680029FE3E /* site.db */,
+				F76232842393A0DF00694032 /* musicclip.mp3 */,
+				F762327A23924AEB00694032 /* gotbloop.mov */,
+				F7623278239236EA00694032 /* got.mov */,
+				F762327C2392500200694032 /* ysheldon.mov */,
+				F7623277239234FA00694032 /* got.mp4 */,
+				F76232742391FA4400694032 /* movieclip.mov */,
+				F76232552391A1F600694032 /* InterfaceController.swift */,
+				F76232572391A1F600694032 /* ExtensionDelegate.swift */,
+				F76232592391A1F600694032 /* NotificationController.swift */,
+				F762325B2391A1F600694032 /* Assets.xcassets */,
+				F762325D2391A1F600694032 /* Info.plist */,
+				F762325E2391A1F600694032 /* PushNotificationPayload.apns */,
+				F76232702391BB1900694032 /* WelcomeController.swift */,
+				F76232722391EF0E00694032 /* EmojiController.swift */,
+				F762327E2392533700694032 /* TicTacToeController.swift */,
+				F76232822392622B00694032 /* OpticIllusionController.swift */,
+				F76232862393A2A600694032 /* GoHomeController.swift */,
+			);
+			path = "Vita WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F762322C2391A1EF00694032 /* Vita */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76232692391A1F600694032 /* Build configuration list for PBXNativeTarget "Vita" */;
+			buildPhases = (
+				F76232292391A1EF00694032 /* Sources */,
+				F762322A2391A1EF00694032 /* Frameworks */,
+				F762322B2391A1EF00694032 /* Resources */,
+				F76232682391A1F600694032 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76232442391A1F400694032 /* PBXTargetDependency */,
+			);
+			name = Vita;
+			productName = Vita;
+			productReference = F762322D2391A1EF00694032 /* Vita.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F76232402391A1F400694032 /* Vita WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76232652391A1F600694032 /* Build configuration list for PBXNativeTarget "Vita WatchKit App" */;
+			buildPhases = (
+				F762323F2391A1F400694032 /* Resources */,
+				F76232642391A1F600694032 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76232532391A1F600694032 /* PBXTargetDependency */,
+			);
+			name = "Vita WatchKit App";
+			productName = "Vita WatchKit App";
+			productReference = F76232412391A1F400694032 /* Vita WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F762324F2391A1F600694032 /* Vita WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76232612391A1F600694032 /* Build configuration list for PBXNativeTarget "Vita WatchKit Extension" */;
+			buildPhases = (
+				F762324C2391A1F600694032 /* Sources */,
+				F762324D2391A1F600694032 /* Frameworks */,
+				F762324E2391A1F600694032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vita WatchKit Extension";
+			productName = "Vita WatchKit Extension";
+			productReference = F76232502391A1F600694032 /* Vita WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F76232252391A1EF00694032 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "New York University";
+				TargetAttributes = {
+					F762322C2391A1EF00694032 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F76232402391A1F400694032 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F762324F2391A1F600694032 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F76232282391A1EF00694032 /* Build configuration list for PBXProject "Vita" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F76232242391A1EF00694032;
+			productRefGroup = F762322E2391A1EF00694032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F762322C2391A1EF00694032 /* Vita */,
+				F76232402391A1F400694032 /* Vita WatchKit App */,
+				F762324F2391A1F600694032 /* Vita WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F762322B2391A1EF00694032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F762323D2391A1F400694032 /* LaunchScreen.storyboard in Resources */,
+				F762323A2391A1F400694032 /* Assets.xcassets in Resources */,
+				F76232382391A1EF00694032 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F762323F2391A1F400694032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F762324A2391A1F500694032 /* Assets.xcassets in Resources */,
+				F76232482391A1F400694032 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F762324E2391A1F600694032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7623279239236EA00694032 /* got.mov in Resources */,
+				F762325C2391A1F600694032 /* Assets.xcassets in Resources */,
+				F76232852393A0DF00694032 /* musicclip.mp3 in Resources */,
+				F762327B23924AEB00694032 /* gotbloop.mov in Resources */,
+				F719EAC023A40E210029FE3E /* site.db in Resources */,
+				F762327D2392500200694032 /* ysheldon.mov in Resources */,
+				F76232752391FA4400694032 /* movieclip.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F76232292391A1EF00694032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76232352391A1EF00694032 /* ViewController.swift in Sources */,
+				F76232312391A1EF00694032 /* AppDelegate.swift in Sources */,
+				F76232332391A1EF00694032 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F762324C2391A1F600694032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F762325A2391A1F600694032 /* NotificationController.swift in Sources */,
+				F76232582391A1F600694032 /* ExtensionDelegate.swift in Sources */,
+				F762327F2392533700694032 /* TicTacToeController.swift in Sources */,
+				F76232712391BB1900694032 /* WelcomeController.swift in Sources */,
+				F76232872393A2A600694032 /* GoHomeController.swift in Sources */,
+				F76232562391A1F600694032 /* InterfaceController.swift in Sources */,
+				F76232832392622B00694032 /* OpticIllusionController.swift in Sources */,
+				F76232732391EF0E00694032 /* EmojiController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F76232442391A1F400694032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76232402391A1F400694032 /* Vita WatchKit App */;
+			targetProxy = F76232432391A1F400694032 /* PBXContainerItemProxy */;
+		};
+		F76232532391A1F600694032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F762324F2391A1F600694032 /* Vita WatchKit Extension */;
+			targetProxy = F76232522391A1F600694032 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F76232362391A1EF00694032 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76232372391A1EF00694032 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F762323B2391A1F400694032 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F762323C2391A1F400694032 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F76232462391A1F400694032 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76232472391A1F400694032 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F762325F2391A1F600694032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F76232602391A1F600694032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F76232622391A1F600694032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5RUDA2N6A;
+				INFOPLIST_FILE = "Vita WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macobserver.com.Vita.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		F76232632391A1F600694032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5RUDA2N6A;
+				INFOPLIST_FILE = "Vita WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macobserver.com.Vita.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		F76232662391A1F600694032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5RUDA2N6A;
+				IBSC_MODULE = Vita_WatchKit_Extension;
+				INFOPLIST_FILE = "Vita WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = macobserver.com.Vita.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		F76232672391A1F600694032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5RUDA2N6A;
+				IBSC_MODULE = Vita_WatchKit_Extension;
+				INFOPLIST_FILE = "Vita WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = macobserver.com.Vita.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		F762326A2391A1F600694032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5RUDA2N6A;
+				INFOPLIST_FILE = Vita/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macobserver.com.Vita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F762326B2391A1F600694032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5RUDA2N6A;
+				INFOPLIST_FILE = Vita/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macobserver.com.Vita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F76232282391A1EF00694032 /* Build configuration list for PBXProject "Vita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F762325F2391A1F600694032 /* Debug */,
+				F76232602391A1F600694032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76232612391A1F600694032 /* Build configuration list for PBXNativeTarget "Vita WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76232622391A1F600694032 /* Debug */,
+				F76232632391A1F600694032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76232652391A1F600694032 /* Build configuration list for PBXNativeTarget "Vita WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76232662391A1F600694032 /* Debug */,
+				F76232672391A1F600694032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76232692391A1F600694032 /* Build configuration list for PBXNativeTarget "Vita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F762326A2391A1F600694032 /* Debug */,
+				F762326B2391A1F600694032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F76232252391A1EF00694032 /* Project object */;
+}

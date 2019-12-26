@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--EmojiController-->
+        <scene sceneID="KPE-7A-AEd">
+            <objects>
+                <controller identifier="EmojiController" id="wlw-Mh-vON" customClass="EmojiController" customModule="Vita_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="27" alignment="center" text="Alert!" textAlignment="center" id="g9l-fY-N85">
+                            <color key="textColor" red="1" green="0.024345948850892474" blue="0.066951112488632725" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <movie width="1" height="134" alignment="left" id="mb9-Qc-ZNT">
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer delaysTouchesBegan="YES" id="gF5-Aa-Rpk">
+                                    <connections>
+                                        <action selector="swipeNext:" destination="wlw-Mh-vON" id="6jz-lh-iia"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer direction="2" id="8qX-RT-rDy">
+                                    <connections>
+                                        <action selector="swipePrev:" destination="wlw-Mh-vON" id="IyW-e1-exY"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
+                        </movie>
+                        <button width="114" height="25" alignment="center" title="Well Done" id="FV5-gw-wuW">
+                            <connections>
+                                <action selector="goBack" destination="wlw-Mh-vON" id="4UJ-zF-kzq"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="done" destination="FV5-gw-wuW" id="jLV-Nl-eZX"/>
+                        <outlet property="swipeVideos" destination="gF5-Aa-Rpk" id="q5U-3t-bDw"/>
+                        <outlet property="swipeVideosR" destination="8qX-RT-rDy" id="wwQ-7r-80i"/>
+                        <outlet property="video" destination="mb9-Qc-ZNT" id="hyJ-VJ-txx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-288.26086956521738" y="341.89732142857144"/>
+        </scene>
+        <!--TicTacToeController-->
+        <scene sceneID="TZj-23-FVy">
+            <objects>
+                <controller identifier="TicTacToeController" id="P65-v4-HoO" customClass="TicTacToeController" customModule="Vita_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="23" alignment="center" text="Tic Tac Toe" textAlignment="center" id="qOn-jJ-jKr"/>
+                        <group width="136" alignment="center" id="GFo-rz-CGx">
+                            <items>
+                                <button width="43" height="28" alignment="left" id="caw-Gq-rxX">
+                                    <accessibilityTraits key="accessibilityTraits" button="YES" image="YES"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <connections>
+                                        <action selector="onClickCell11" destination="P65-v4-HoO" id="FWn-Jj-uCU"/>
+                                    </connections>
+                                </button>
+                                <button width="43" height="28" alignment="left" id="ubU-tk-OeE">
+                                    <connections>
+                                        <action selector="onClickCell12" destination="P65-v4-HoO" id="mwF-Em-3Qu"/>
+                                    </connections>
+                                </button>
+                                <button width="43" height="28" alignment="left" id="TiR-oP-UDm">
+                                    <connections>
+                                        <action selector="onClickCell13" destination="P65-v4-HoO" id="drz-S8-tCw"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="136" alignment="center" id="QFd-7J-8Pb">
+                            <items>
+                                <button width="43" height="28" alignment="left" id="Hed-Zk-LjN">
+                                    <accessibilityTraits key="accessibilityTraits" button="YES" image="YES"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <connections>
+                                        <action selector="onClickCell21" destination="P65-v4-HoO" id="ihE-qv-2lu"/>
+                                    </connections>
+                                </button>
+                                <button width="43" height="28" alignment="left" id="BzU-xW-ewL">
+                                    <connections>
+                                        <action selector="onClickCell22" destination="P65-v4-HoO" id="tGR-CN-UgP"/>
+                                    </connections>
+                                </button>
+                                <button width="43" height="28" alignment="left" id="MYn-hH-BCJ">
+                                    <connections>
+                                        <action selector="onClickCell23" destination="P65-v4-HoO" id="FQZ-E7-MIo"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="136" alignment="center" id="2e8-qX-H7c">
+                            <items>
+                                <button width="43" height="28" alignment="left" id="9k8-rk-sdA">
+                                    <accessibilityTraits key="accessibilityTraits" button="YES" image="YES"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <connections>
+                                        <action selector="onClickCell31" destination="P65-v4-HoO" id="Uam-af-IOu"/>
+                                    </connections>
+                                </button>
+                                <button width="43" height="28" alignment="left" id="ttJ-Ol-DTq">
+                                    <connections>
+                                        <action selector="onClickCell32" destination="P65-v4-HoO" id="sww-Bb-KXf"/>
+                                    </connections>
+                                </button>
+                                <button width="43" height="28" alignment="left" id="LCu-Kp-Ujb">
+                                    <connections>
+                                        <action selector="onClickCell33" destination="P65-v4-HoO" id="q1t-RT-Pfg"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="136" height="25" alignment="center" text="Result" textAlignment="center" id="C4b-1g-T4u"/>
+                        <button width="136" height="32" alignment="center" title="Play Again" id="eWi-oT-sWI">
+                            <connections>
+                                <action selector="onClickResetBoard" destination="P65-v4-HoO" id="adz-e9-dVk"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="b11" destination="caw-Gq-rxX" id="gqx-M1-9RL"/>
+                        <outlet property="b12" destination="ubU-tk-OeE" id="dwI-c6-X89"/>
+                        <outlet property="b13" destination="TiR-oP-UDm" id="3UJ-Cg-hh9"/>
+                        <outlet property="b21" destination="Hed-Zk-LjN" id="7jR-tS-7K6"/>
+                        <outlet property="b22" destination="BzU-xW-ewL" id="9j2-hr-lf5"/>
+                        <outlet property="b23" destination="MYn-hH-BCJ" id="ibD-QQ-GW0"/>
+                        <outlet property="b31" destination="9k8-rk-sdA" id="jJw-bv-q3V"/>
+                        <outlet property="b32" destination="ttJ-Ol-DTq" id="oxr-5O-D6F"/>
+                        <outlet property="b33" destination="LCu-Kp-Ujb" id="ANA-oa-Zlz"/>
+                        <outlet property="boardG1" destination="GFo-rz-CGx" id="Xqa-vg-Uw4"/>
+                        <outlet property="boardG2" destination="QFd-7J-8Pb" id="mie-Bj-Ybf"/>
+                        <outlet property="boardG3" destination="2e8-qX-H7c" id="AlU-A6-mk0"/>
+                        <outlet property="play" destination="eWi-oT-sWI" id="ViY-Bm-8kM"/>
+                        <outlet property="result" destination="C4b-1g-T4u" id="087-cx-Yst"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-60.608695652173907" y="100.9375"/>
+        </scene>
+        <!--WelcomeController-->
+        <scene sceneID="rW2-i5-xFD">
+            <objects>
+                <controller identifier="WelcomeController" id="dzi-4G-hoW" customClass="WelcomeController" customModule="Vita_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="43" alignment="center" text="Label" textAlignment="center" id="wOk-Kd-gYP"/>
+                        <label width="136" height="57" alignment="center" text="Label" textAlignment="center" numberOfLines="5" id="vsQ-NA-0FZ"/>
+                        <group width="1" alignment="center" id="xag-aP-ZcZ">
+                            <items>
+                                <label width="68" alignment="left" text="BPM" textAlignment="right" id="7Am-4d-pyk">
+                                    <color key="textColor" red="1" green="0.0059727141710000002" blue="0.090794006610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label width="129" alignment="left" text="BP" textAlignment="center" id="1IB-sV-NZy">
+                                    <color key="textColor" red="1" green="0.0059727141710000002" blue="0.090794006610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="9KP-ch-suI">
+                            <items>
+                                <label width="64" alignment="left" text="Label" textAlignment="right" id="tfs-ok-Hl1">
+                                    <color key="textColor" red="1" green="0.0059727141710000002" blue="0.090794006610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label width="136" alignment="left" text="Label" textAlignment="center" id="fVD-PZ-AmP">
+                                    <color key="textColor" red="1" green="0.0059727141710000002" blue="0.090794006610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bloodPre" destination="tfs-ok-Hl1" id="yBR-gW-Ml1"/>
+                        <outlet property="bp" destination="1IB-sV-NZy" id="FoA-Lb-3tl"/>
+                        <outlet property="bpm" destination="7Am-4d-pyk" id="hOe-Q4-a1h"/>
+                        <outlet property="displayMsg" destination="vsQ-NA-0FZ" id="e8h-Zg-o3h"/>
+                        <outlet property="heartBeat" destination="fVD-PZ-AmP" id="aP4-Dl-h3Z"/>
+                        <outlet property="mode" destination="wOk-Kd-gYP" id="6Cu-kL-8zt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-38.434782608695649" y="353.66071428571428"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Vita_WatchKit_Extension">
+                    <items>
+                        <label width="148" height="40" alignment="center" text="What's Up?" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="0" id="vbZ-WM-Fz6">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <button width="1" alignment="left" title="Normal " id="0YG-5Y-CiP">
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onClickNormal" destination="AgC-eL-Hgc" id="ENb-Tn-Pp0"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sports" id="5bI-Gf-elO">
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onClickSports" destination="AgC-eL-Hgc" id="xIb-uu-PXG"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sleep" id="Em7-Zl-zFr">
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onClickSleep" destination="AgC-eL-Hgc" id="Xwr-CZ-vbZ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="normal" destination="0YG-5Y-CiP" id="FS7-dl-Ff4"/>
+                        <outlet property="sleep" destination="Em7-Zl-zFr" id="BBj-63-nBz"/>
+                        <outlet property="sports" destination="5bI-Gf-elO" id="n6d-jC-wbI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.52173913043478" y="344.55357142857144"/>
+        </scene>
+        <!--GoHomeController-->
+        <scene sceneID="KRp-ho-PHB">
+            <objects>
+                <controller identifier="GoHomeController" id="aAG-gw-P5w" customClass="GoHomeController" customModule="Vita_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="center" text="Time to go home!" textAlignment="center" id="n6D-A8-Tkj"/>
+                        <map width="136" height="75" alignment="center" id="M6y-EO-hC9"/>
+                        <imageView width="136" height="78" alignment="center" id="KD9-P9-mDT"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="KD9-P9-mDT" id="fS3-hD-lVW"/>
+                        <outlet property="map" destination="M6y-EO-hC9" id="mlA-yq-MEx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-269.04347826086956" y="667.85714285714289"/>
+        </scene>
+        <!--OpticIllusionController-->
+        <scene sceneID="esr-KG-RPW">
+            <objects>
+                <controller identifier="OpticIllusionController" id="BRv-Hs-t3h" customClass="OpticIllusionController" customModule="Vita_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="25" alignment="center" text="Spot Black Circle" id="f9x-wa-yZV"/>
+                        <imageView height="128" alignment="left" id="gOy-2R-uQu"/>
+                        <button width="136" height="31" alignment="center" title="Play Visuals" id="jX5-Lt-ZBB">
+                            <connections>
+                                <action selector="goBack" destination="BRv-Hs-t3h" id="AEg-D7-q3h"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="illusion" destination="gOy-2R-uQu" id="PTB-Uj-tRn"/>
+                        <outlet property="playVisuals" destination="jX5-Lt-ZBB" id="i2z-sD-1WI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-56.173913043478258" y="656.47321428571433"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Vita_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Vita_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>
